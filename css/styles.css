@@ -570,6 +570,12 @@ border: none;
 cursor: pointer;
 }
 
+.footer-form-btn:hover,
+.footer-form-btn:focus{
+    background-color: #188CE8;
+}
+
+
 
 
 
@@ -725,6 +731,9 @@ transform: translate(-50%, -50%) scale(1);
     width: 30px;
     height: 30px;
     background-color: var(--bcg-main);
+    transition-property: fill;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
 
 }
 .close-btn:hover,
@@ -747,6 +756,7 @@ transform: translate(-50%, -50%) scale(1);
     margin-bottom: 12px;
 }
 .modal-label {
+    display: block;
     font-size: 12px;
     line-height: calc(14/12);
     letter-spacing: 0.01em;
